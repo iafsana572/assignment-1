@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* font section */
 /* inter font */
 .inter-normal {
@@ -59,8 +64,11 @@ li a {
     border: none;
     font-weight: bold;
     font-size: 16;
+    cursor: pointer;
 }
-
+.button:hover{
+    background-color: #7A73FF;
+}
 
 /* banner section */
 .banner {
@@ -103,8 +111,8 @@ li a {
     font-size: 24px;
     font-weight: 400;
     line-height: 30px;
+    padding: 23px 0px;
     color: #8c8e98;
-    /* padding: 0px opx 23px 0px ; */
 }
 
 .action-section-img {
@@ -133,10 +141,6 @@ li a {
     color: #252432;
 }
 
-/* .users-child{
-    margin: 0px;
-} */
-
 .users-child h1 {
     color: #4e47ff;
     font-size: 80px;
@@ -164,32 +168,89 @@ li a {
     display: flex;
     gap: 115px;
     margin: 92px 150px 14px;
+    padding: 71px 0px;
+
 }
 
-.get-in-touch-section h1 {
+.get-in-touch-section-h1 {
     color: #000000;
     font-size: 97px;
     font-weight: bold;
-    align-items: center;
-}
-/*---------------------form section -----------------------------*/
-.all-label {
-    font-size: 18px;
-    font-weight: 500;
+    padding: 0px;
     font-family: "Inter", sans-serif;
-    /* color: #000000; */
-    color: red;
-    padding: 50px;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    flex: 1;
+
 }
 
-.all-input {
-    padding: 10px;
-    color: red;
+form {
+    flex: 1;
+}
+
+/*---------------------form section -----------------------------*/
+
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #D6DDED;
+    border-radius: 10px;
+    box-sizing: border-box;
+   font-family: "Inter", sans-serif;
+   font-size: 20px;
+    font-weight: 400;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4E47FF;
+    border: 2px solid #4E47FF;
+    color: #FFFFFF;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    background-color: #7A73FF;
+}
+
+div {
+    border-radius: 5px;
     padding: 20px;
-    border: 2px solid green;
 }
 
-/* footer section */    /* footer section */     /* footer section */
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #D6DDED;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    resize: none;
+    margin-top: 10px;
+     font-family: "Inter", sans-serif;
+   font-size: 20px;
+    font-weight: 400;
+}
+.all-label{
+     font-family: "Inter", sans-serif;
+   font-size: 18px;
+    font-weight: 500;
+}
+/* footer section */
 
 footer {
     text-align: center;
@@ -216,13 +277,14 @@ footer .description {
 
 .list-items {
     display: flex;
-    text-align: center;
+    /* text-align: center; */
     color: #8987A1;
     font-size: 16px;
     font-weight: 400;
     font-family: "Inter", sans-serif;
     list-style: none;
     justify-content: space-around;
-    text-align: justify;
+    /* text-align: justify; */
     margin: 0px;
+    padding: 0px;
 }
